@@ -1,0 +1,25 @@
+body {
+    background-color: white;
+}
+
+.loginLeft {
+    background-color: #3460F2;
+    flex-basis: 70%;
+    color:white;
+}
+
+.loginLeft h1 {
+    font-family: "Effra Heavy";
+    font-size: 5vw;
+    -webkit-text-stroke: 2px black;
+    
+}
+
+.titleLotto {
+    font-family: "Effra Heavy";
+    color: #3460F2;
+}
+
+.login-form {
+
+}

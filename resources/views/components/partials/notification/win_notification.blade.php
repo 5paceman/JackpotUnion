@@ -1,0 +1,3 @@
+<div class="flex-row center gap-12 notification padding-4">
+    You've won! Check your results! <form action="/user/notification/delete" method="POST">@csrf<input type="hidden" name="id" value="{{ $notification->id }}"/><button class="button" type="submit"><i class="fa-solid fa-trash-can"></i></button></form>
+</div>

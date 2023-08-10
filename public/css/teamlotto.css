@@ -1,0 +1,398 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@300;400&display=swap');
+
+.fill {
+    width: 100%;
+    height: 100%;
+}
+
+html, body {
+    font-family: 'Open Sans';
+    background-color:rgb(229, 250, 235); 
+}
+
+b {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+.text-small {
+    font-size: small;
+}
+
+.text-smaller {
+    font-size: smaller;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    min-width: 0;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.flex-basis {
+    flex-basis: auto;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.center-x {
+    align-items: center;
+}
+
+.center-y {
+    justify-content: center;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.jc-center > * {
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    justify-content: center;
+}
+
+.height-6h {
+    height: 20ex;
+}
+
+.height-160px {
+    height: 160px;
+}
+
+.height-200px {
+    height: 200px;
+}
+
+.width-40p {
+    width: 40%;
+}
+
+.width-50p {
+    width: 50%;
+}
+
+.width-60p {
+    width: 60%;
+}
+
+.width-70p {
+    width: 70%;
+}
+
+.width-80p {
+    width: 80%;
+}
+
+.scroll {
+    overflow-y: scroll;
+}
+
+.grid-column-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-column-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-row-2 {
+    grid-template-rows: 2;
+}
+
+.grid-row-3 {
+    grid-template-rows: 3;
+}
+
+.grid-row-4 {
+    grid-template-rows: 4;
+}
+
+.grid-fill-row {
+    grid-column: 1 / -1;
+}
+
+.grid-fill-row-2 {
+    grid-column: span 2;
+}
+
+.grid-fill-column-2 {
+    grid-row: span 2;
+}
+
+.gap-2 {
+    gap: 2px;
+}
+
+.gap-4 {
+    gap: 4px;
+}
+
+.gap-6 {
+    gap: 6px;
+}
+
+.gap-8 {
+    gap: 8px;
+}
+
+.gap-12 {
+    gap: 12px;
+}
+
+.padding-left-2 {
+    padding-left: 2px;
+}
+
+.padding-left-4 {
+    padding-left: 4px;
+}
+
+.padding-left-8 {
+    padding-left: 8px;
+}
+
+.padding-left-12 {
+    padding-left: 12px;
+}
+
+.padding-2 {
+    padding: 2px;
+}
+
+.padding-4 {
+    padding: 4px;
+}
+
+.padding-8 {
+    padding: 8px;
+}
+
+.padding-12 {
+    padding: 12px;
+}
+
+.margin-bottom-2 {
+    margin-bottom: 2px;
+}
+
+.margin-bottom-4 {
+    margin-bottom: 4px;
+}
+
+.margin-bottom-8 {
+    margin-bottom: 8px;
+}
+
+.margin-bottom-12 {
+    margin-bottom: 12px;
+}
+
+.margin-2 {
+    margin: 2px;
+}
+
+.margin-4 {
+    margin: 4px;
+}
+
+.margin-8 {
+    margin: 8px;
+}
+
+.margin-12 {
+    margin: 12px;
+}
+
+.floating-island {
+    width: 80%;
+    background-color: white;
+    min-width: 0;
+}
+
+.notification {
+    background-color: #3460f241;
+}
+
+.title {
+    font-size: x-large;
+    text-align: center;
+    font-weight: bold;
+}
+
+.title-small {
+    font-size: medium;
+    text-align: center;
+    font-weight: bold;
+}
+
+.margin-left-auto {
+    margin-left: auto;
+}
+
+.button {
+    border: 2px solid black;
+    background-color: #3460F2;
+    border-radius: 10%;
+    font-size: small;
+    padding: 4px;
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    width: max-content;
+}
+
+.pagination {
+    font-size: small;
+}
+
+input[type=number] {
+    width: 4em;
+}
+
+.block-link {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.textarea {
+    resize: both;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    gap: 4px;
+}
+
+.list li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.ticket-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.ticket-table thead tr:nth-child(1) {
+    font-weight: bold;
+    text-align: center;
+}
+
+.ticket-table thead tr:nth-child(2) {
+    font-weight: bold;
+    background-color: #3460f23b;
+}
+
+.ticket-table th, td {
+    padding: 4px;
+    border: 1px solid black;
+    text-align: left;
+}
+
+.nav {
+    background-color: #3460F2;
+    color:white;
+    height: 30px;
+    justify-content: center;
+    padding: 4px;
+    border-bottom: 1px solid #adbef8;
+}
+
+.nav li {
+    font-size: large;
+
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font-family: "Effra Heavy";
+    font-size: 5vw;
+    color: white;
+    -webkit-text-stroke: 2px black;
+}
+
+.logo-half {
+    font-family: "Effra Heavy";
+    color: #3460F2;
+}
+
+.border-1-dotted {
+    border: 1px dotted black;
+}
+
+.border-2-dotted {
+    border: 2px dotted black;
+}
+
+.border-1 {
+    border: 1px solid black;
+}
+
+.border-2 {
+    border: 2px solid black;
+}
+
+.border-4 {
+    border: 4px solid black;
+}
+
+.box-shadow {
+    box-shadow: 12px 12px 2px 1px #3460F2;
+}
+
+.error {
+    color: #F23460;
+    text-align: center;
+}
+
+.success {
+    color: #60F234;
+    text-align: center;
+}
