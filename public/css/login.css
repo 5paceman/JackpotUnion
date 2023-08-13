@@ -23,3 +23,8 @@ body {
 .login-form {
 
 }
+
+a {
+    text-decoration: underline;
+    color: #3460F2;
+}
