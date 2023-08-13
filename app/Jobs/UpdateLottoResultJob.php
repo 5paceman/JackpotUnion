@@ -15,7 +15,7 @@ use Carbon\Carbon;
 
 class UpdateLottoResultJob implements ShouldQueue
 {
-    // app(\Illuminate\Contracts\Bus\Dispatcher::class)->dispatch(new App\Jobs\UpdateLottoResult(env('EUROMILLIONS_API')));
+    // app(\Illuminate\Contracts\Bus\Dispatcher::class)->dispatch(new App\Jobs\UpdateLottoResultJob(env('EUROMILLIONS_API')));
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
     private string $lottoAPIURL;
     /**
