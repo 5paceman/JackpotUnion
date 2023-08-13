@@ -141,7 +141,7 @@ class SyndicateController extends Controller
 
         if($invite->syndicate->members()->save(auth()->user()))
         {
-            $invite->invitedBy->notify(new JoinNotification($invite->invitedBy->name, $invite->syndicate->name));
+            $invite->invitedBy->notify(new JoinNotification($invite->invitedBy->name(), $invite->syndicate->name));
             $invite->delete();
             return redirect("/syndicate?id={$invite->syndicate->id}");
         }

@@ -26,12 +26,12 @@ class LotteryResultsProvider extends ServiceProvider
     {
         Blade::directive('lottoresult', function(string $expression) {
             $lottoResult = LotteryResult::latest()->first();
-            return $lottoResult->formattedResults() ?? 'Unable to get results';
+            return $lottoResult ? $lottoResult->formattedResults() : 'Unable to get results';
         });
 
         Blade::directive('drawdate', function(string $expression) {
             $lottoResult = LotteryResult::latest()->first();
-            return date_create($lottoResult->draw_date)->format('d-m-Y') ?? 'Unable to get draw date';
+            return $lottoResult ? date_create($lottoResult->draw_date)->format('d-m-Y') : 'Unable to get draw date';
         });
     }
 }

@@ -13,7 +13,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule): void
     {
-        $schedule->job(new UpdateLottoResultJob(env('LOTTO_API')))->everyFifteenMinutes();
+        $schedule->job(new UpdateLottoResultJob(env('EUROMILLIONS_API')))->everyFifteenMinutes();
         $schedule->command('auth:clear-resets')->everyFifteenMinutes();
     }
 
