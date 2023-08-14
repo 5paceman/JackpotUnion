@@ -9,11 +9,15 @@
             <div class="scroll height-6h">
                 <ul class="list">
                     @foreach($syndicate->members as $user)
-                        <li> {{ $user->email }} @if($editable)<form class="margin-left-auto" action="/syndicate/user/remove" method="post">@csrf<input type="hidden" name="syndicate_id" value="{{$syndicate->id}}"/><input type="hidden" name="user_id" value="{{$user->id}}"/><input type="submit" class="button" value="Delete"></form>@endif</li>
+                        <li> {{ $editable ? $user->email : $user->name() }} @if($editable)<form class="margin-left-auto" action="/syndicate/user/remove" method="post">@csrf<input type="hidden" name="syndicate_id" value="{{$syndicate->id}}"/><input type="hidden" name="user_id" value="{{$user->id}}"/><input type="submit" class="button" value="Delete"></form>@endif</li>
                     @endforeach
+                    @if($editable)
                     @foreach($syndicate->invites as $invite)
                         <li> {{ $invite->email }} - Invite Sent </li>
                     @endforeach
+                    @else
+                        <li> Pending Invites: {{ $syndicate->invites->count() }} </li>
+                    @endif
                 </ul>
             </div>
             @if($editable)
