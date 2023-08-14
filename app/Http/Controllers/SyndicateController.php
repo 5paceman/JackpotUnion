@@ -84,7 +84,7 @@ class SyndicateController extends Controller
 
         if($request->has('won') && !empty($request->get('won')))
         {
-            $qb = $qb->where('won', $request->get('won'));
+            $qb = $qb->where('won', true);
         }
 
         if($request->has('matchedBalls') && !empty($request->get('matchedBalls')))
