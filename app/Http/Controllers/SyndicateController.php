@@ -70,7 +70,7 @@ class SyndicateController extends Controller
 
         $user = User::find(auth()->user()->id);
 
-        $qb = LotteryTicket::where('drawn', true);
+        $qb = LotteryTicket::where('drawn', true)->where('syndicate_id', $syndicate->id);
         
         if($request->has('drawDate') && !empty($request->get('drawDate')))
         {
