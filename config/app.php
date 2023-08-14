@@ -186,7 +186,7 @@ return [
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
 
-    'lotto-api' => env('LOTTO_API', ''),
-    'support_email' => "support@teamlotto.co.uk"
+    'euromillions-api' => "https://www.national-lottery.co.uk/results/euromillions/draw-history/csv",
+    'support_email' => "support@jackpotunion.co.uk"
 
 ];
