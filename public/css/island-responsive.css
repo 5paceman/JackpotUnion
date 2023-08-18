@@ -1,0 +1,66 @@
+main {
+    padding: 12px;
+}
+
+@media only screen and (max-width: 1600px) {
+    body,html  {
+        padding: 0;
+        background-color: white;
+    }
+
+    .floating-island {
+        width: 100%;
+        border: none;
+        box-shadow: none;
+        flex: 1;
+    }
+}
+
+@media only screen and (max-width: 812px) {
+    body {
+        padding-bottom: 10%;
+    }
+    #syndicate {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #posts {
+        display: none;
+    }
+
+    .nav {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        border-bottom: none;
+        padding: 4px;
+    }
+
+    .logo {
+        -webkit-text-stroke: 1px black;
+        background-color: #3460F2;
+        width: 100%;
+        font-size: 12vw;
+        text-align: center;
+        padding-bottom: 12px;
+    }
+
+    .grid-column-3 {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    .border-2 {
+        border-left: none;
+        border-right: none;
+    }
+    
+    main div {
+        padding: 0px;
+    }
+
+}

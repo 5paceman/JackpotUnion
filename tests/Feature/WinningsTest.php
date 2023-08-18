@@ -13,7 +13,7 @@ class WinningsTest extends TestCase
     /**
      * A basic feature test example.
      */
-    public function test_example(): void
+    public function testWin(): void
     {
         $result = LotteryResult::create([
             'ball_one' => 1,
@@ -21,12 +21,10 @@ class WinningsTest extends TestCase
             'ball_three' => 1,
             'ball_four' => 1,
             'ball_five' => 1,
-            'ball_six' => 1,
-            'ball_bonus' => 1,
+            'ball_lp_one' => 1,
+            'ball_lp_two' => 1,
             'draw_date' => date_create("24-03-1998"),
-            'ball_set' => 0,
-            'draw_number' => 0,
-            'machine' => 'Test'
+            'draw_number' => 0
         ]);
 
         $TwoBallWin = $result->matchedBalls(array(1, 1, 0, 0, 0, 0));

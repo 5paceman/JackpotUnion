@@ -4,6 +4,7 @@
         @foreach ($errors->all() as $error)
             <p>{{ $error }}</p>
         @endforeach
+        <x-notification-box />
         <div class="border-2 padding-8 flex-center gap-8">
             <h2 class="title-small">Change Password</h2>
             <form action="/update-password" method="POST" class="flex-center gap-8" autocomplete="off">
@@ -26,6 +27,5 @@
                 <input type="submit" value="Change" class="button" />
             </form>
         </div>
-        <x-notification-box />
     </div>
 </x-layout.island>

@@ -1,5 +1,5 @@
 <x-layout.island>
-    <div class="padding-8 grid grid-column-3 grid-row-4 gap-8">
+    <div id="syndicate" class="padding-8 grid grid-column-3 grid-row-4 gap-8">
         <h2 class="title grid-fill-row">{{ $syndicate->name }}</h2>
         @foreach ($errors->all() as $error)
             <p class="error grid-fill-row">{{ $error }}</p>
@@ -108,7 +108,7 @@
                 </div>
             </div>
         @endif
-        <div class="border-2 padding-8 {{ $editable ? 'grid-fill-row-2' : 'grid-fill-row'}}">
+        <div class="border-2 padding-8 scroll {{ $editable ? 'grid-fill-row-2' : 'grid-fill-row'}}">
             <h2 class="title-small margin-bottom-8">Drawn Tickets</h2>
             <table class="ticket-table margin-bottom-8">
                 <thead>

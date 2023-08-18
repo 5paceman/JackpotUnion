@@ -9,9 +9,9 @@
         <input type="text" name="email" />
         <label>Password:</label>
         <input type="password" name="password" />
-        <div><input type="checkbox" id="remember" name="remember" />
+        <div class="flex-row gap-8 text-small center-x"><input type="checkbox" id="remember" name="remember" />
         <label for="remember">Remember me?</label></div>
-        <input type="submit" value="Login" />
+        <input class="button" type="submit" value="Login" />
         <span>Need an account? <a href="/register">Register</a></span>
         <span>Forgot your password? <a href="/forgot-password">Reset</a></span>
     </form>
