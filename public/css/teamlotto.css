@@ -1,5 +1,5 @@
 @import url('reset.css');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Open+Sans:wght@300;400&display=swap');
 
 .fill {
     width: 100%;
@@ -19,6 +19,10 @@ a {
     text-decoration: none;
     cursor: pointer;
     color: inherit;
+}
+
+p {
+    line-height: 1.2;
 }
 
 .text-small {
@@ -117,6 +121,10 @@ a {
 
 .scroll {
     overflow-y: scroll;
+}
+
+.scroll-x {
+    overflow-x: scroll;
 }
 
 .grid-column-3 {
@@ -262,15 +270,16 @@ a {
 }
 
 .button {
-    border: 2px solid black;
     background-color: #3460F2;
-    border-radius: 10%;
-    font-size: small;
+    border: none;
+    font-size: medium;
     padding: 4px;
     color:white;
     text-decoration: none;
     text-align: center;
-    width: max-content;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .pagination {
@@ -352,14 +361,15 @@ input[type=number] {
 }
 
 .logo {
-    font-family: "Effra Heavy";
+    font-family: "Oswald", sans-serif;
     font-size: 5vw;
+    padding-bottom: 1vw;
     color: white;
     -webkit-text-stroke: 2px black;
 }
 
 .logo-half {
-    font-family: "Effra Heavy";
+    font-family: "Oswald", sans-serif;
     color: #3460F2;
 }
 

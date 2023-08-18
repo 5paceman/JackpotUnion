@@ -1,0 +1,39 @@
+@media only screen and (max-width: 812px) {
+    body {
+        flex-direction: column;
+        font-size: large;
+    }
+
+    .loginLeft {
+        flex-basis: 20%;
+    }
+
+    .loginLeft div {
+        display: none;
+    }
+
+    .loginLeft h1 {
+        font-size: 12vw;
+        -webkit-text-stroke: 2px black;
+        
+    }
+
+    .flex-grow {
+        flex-grow: 0;
+        padding-top: 5%;
+    }
+
+    .text-small {
+        font-size: medium;
+    }
+
+    input[type=checkbox] {
+        transform: scale(2);
+    }
+
+    input {
+        height: 8vw;
+        font-size: 5vw;
+    }
+
+}

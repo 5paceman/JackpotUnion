@@ -15,16 +15,21 @@ class LotteryResultsTest extends TestCase
      */
     public function test_example(): void
     {
-        $results = new LotteryResultRetriever("https://www.national-lottery.co.uk/results/lotto/draw-history/csv");
-        Log::info($results->formattedResults());
-        $this->assertIsNumeric($results->ballOne);
-        $this->assertIsNumeric($results->ballTwo);
-        $this->assertIsNumeric($results->ballThree);
-        $this->assertIsNumeric($results->ballFour);
-        $this->assertIsNumeric($results->ballFive);
-        $this->assertIsNumeric($results->ballSix);
-        $this->assertIsNumeric($results->bonusBall);
-        $this->assertIsNumeric($results->ballSet);
+        $retriever = new LotteryResultRetriever("https://www.national-lottery.co.uk/results/euromillions/draw-history/csv");
+
+        foreach($retriever->results as $result)
+        {
+            $this->assertIsNumeric($result->ballOne);
+            $this->assertIsNumeric($result->ballTwo);
+            $this->assertIsNumeric($result->ballThree);
+            $this->assertIsNumeric($result->ballFour);
+            $this->assertIsNumeric($result->ballFive);
+            $this->assertIsNumeric($result->ball_lp_one);
+            $this->assertIsNumeric($result->ball_lp_two);
+
+            $this->assertIsNumeric($result->drawNumber);
+            $this->assertIsObject(date_create($result->drawDate));
+        }
     }
         
 }

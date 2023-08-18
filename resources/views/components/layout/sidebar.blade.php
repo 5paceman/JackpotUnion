@@ -2,10 +2,10 @@
 <html class="fill" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="{{ asset('css/teamlotto.css') }}" />
-        <link href="https://db.onlinewebfonts.com/c/29aaa00c8f322b47863a40b19b7e9e6b?family=Effra+Heavy" rel="stylesheet"> 
         <link rel="stylesheet" href="{{ asset('css/login.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/sidebar-responsive.css') }}" />
 
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -16,7 +16,7 @@
         <meta name="theme-color" content="#ffffff">
         <title>{{ config('app.name') }}</title>
     </head>
-    <body class="flex-row fill">
+    <body class="fill">
         <section class="loginLeft flex-center gap-12">
             <h1>Jackpot<span class="titleLotto">Union</span></h1>
             <div>
