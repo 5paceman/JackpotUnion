@@ -50,11 +50,11 @@ class LotteryResult extends Model
             case 1:
                 if($matchedBonus == 2)
                 {
-                    return "3.60"
+                    return "3.60";
                 } else {
                     return "Lost";
                 }
-                break;
+
             case 2: {
                 switch($matchedBonus)
                 {
