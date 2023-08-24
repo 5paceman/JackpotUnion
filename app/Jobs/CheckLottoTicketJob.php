@@ -45,7 +45,7 @@ class CheckLottoTicketJob implements ShouldQueue
 
         $this->ticket->matched_balls = $matchedBalls;
         $this->ticket->matched_lucky_dip = $matchedBonus;
-        $this->ticket->won = $matchedBalls >= 2;
+        $this->ticket->won = $matchedBalls >= 2 || $matchedBalls == 1 && $matchedBonus == 2;
         $this->ticket->drawn = true;
         $this->ticket->save();
 
