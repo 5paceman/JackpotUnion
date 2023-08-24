@@ -47,6 +47,14 @@ class LotteryResult extends Model
     {
         switch($matchedBalls) 
         {
+            case 1:
+                if($matchedBonus == 2)
+                {
+                    return "3.60"
+                } else {
+                    return "Lost";
+                }
+                break;
             case 2: {
                 switch($matchedBonus)
                 {

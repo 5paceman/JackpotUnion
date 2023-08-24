@@ -29,6 +29,10 @@ main {
         display: none;
     }
 
+    textarea {
+        min-width: 100%;
+    }
+
     .nav {
         position: fixed;
         bottom: 0;
