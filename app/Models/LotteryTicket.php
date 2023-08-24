@@ -46,6 +46,14 @@ class LotteryTicket extends Model
     {
         switch($this->matched_balls) 
         {
+            case 1:
+                if($this->matched_lucky_dip == 2)
+                {
+                    return "3.60";
+                } else {
+                    return "Lost";
+                }
+
             case 2: {
                 switch($this->matched_lucky_dip)
                 {
