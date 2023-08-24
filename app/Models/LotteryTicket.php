@@ -49,7 +49,7 @@ class LotteryTicket extends Model
             case 1:
                 if($this->matched_lucky_dip == 2)
                 {
-                    return "3.60";
+                    return "£3.60";
                 } else {
                     return "Lost";
                 }
